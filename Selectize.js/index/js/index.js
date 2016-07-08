@@ -4,8 +4,8 @@ $(function() {
 	// theme switcher
 	var theme_match = String(window.location).match(/[?&]theme=([a-z0-9]+)/);
 	var theme = (theme_match && theme_match[1]) || 'default';
-	var themes = ['default','legacy','bootstrap2','bootstrap3'];
-	$('head').append('<link rel="stylesheet" href="http://192.168.1.7/overprime/reserva-usuario/librerias/Selectize.js/dist/css/selectize.' + theme + '.css">');
+	//var themes = ['default','legacy','bootstrap2','bootstrap3'];
+	$('head').append('<link rel="stylesheet" href="http://192.168.1.7/cdn/Selectize.js/dist/css/selectize.' + theme + '.css">');
 
 	var $themes = $('<div>').addClass('theme-selector').insertAfter('h1');
 	for (var i = 0; i < themes.length; i++) {
